@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-
-
 interface Product {
   name: string;
   cost: string;
@@ -20,4 +18,10 @@ export class AppComponent {
     { name: 'Photon fizzle', cost: '15'},
     { name: 'Dex\'s double', cost: '30'},
   ];
+
+  showingProducts = false;
+
+  toggleProductsList(): void {
+    this.showingProducts = !this.showingProducts;
+  }
 }
