@@ -1,3 +1,10 @@
-
+<div>
+  <h3>Food at Dex's Diner</h3>
+  <ul>
+    <li *ngFor="let product of products">
+      {{product.name}}: ${{product.cost}}
+    </li>
+  </ul>
+</div>
 
 <router-outlet></router-outlet>
